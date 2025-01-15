@@ -22,7 +22,7 @@ const Login = () => {
 
                 const userInfo = {email,password}
 
-                const res = await fetch('http://localhost:3001/user/login',{
+                const res = await fetch('https://bookbackend-gamma.vercel.app/user/login',{
                     method:"POST",
                     body:JSON.stringify(userInfo),
                     headers:{

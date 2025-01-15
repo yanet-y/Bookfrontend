@@ -23,7 +23,7 @@ const Signup = () => {
 
                 const userInfo = {email,password,username}
 
-                const res = await fetch('http://localhost:3001/user/signup',{
+                const res = await fetch('https://bookbackend-gamma.vercel.app/user/signup',{
                     method:"POST",
                     body:JSON.stringify(userInfo),
                     headers:{

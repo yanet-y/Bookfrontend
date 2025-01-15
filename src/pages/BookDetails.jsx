@@ -13,7 +13,7 @@ const BookDetails = () => {
         console.log('Fetching book with ID:', id);
 
         const fetchFunc = async ()=>{
-            const res = await fetch(`http://localhost:3001/books/${id}`,{
+            const res = await fetch(`https://bookbackend-gamma.vercel.app/books/${id}`,{
                 headers:{
                     "Authorization":`Bearer ${user.token}`
                 }

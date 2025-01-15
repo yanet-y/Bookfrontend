@@ -16,7 +16,7 @@ const EditBook = () => {
 
     useEffect(() => {
 
-        axios.get(`http://localhost:3001/books/${id}`,{
+        axios.get(`https://bookbackend-gamma.vercel.app/books/${id}`,{
           headers:{
             "Authorization":`Bearer ${user.token}`
           }
@@ -39,7 +39,7 @@ const EditBook = () => {
         };
 
         axios
-        .put(`http://localhost:3001/books/${id}`, data,{
+        .put(`https://bookbackend-gamma.vercel.app/books/${id}`, data,{
           headers:{
             "Authorization":`Bearer ${user.token}`
           }

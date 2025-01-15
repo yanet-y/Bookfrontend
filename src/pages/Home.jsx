@@ -12,7 +12,7 @@ export const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/books",{
+      .get("https://bookbackend-gamma.vercel.app/books",{
         headers:{
           "Authorization":`Bearer ${user.token}`
         }

@@ -15,7 +15,7 @@ const DeleteBook = () => {
 
     const handleDeleteBook = () => {
         axios
-        .delete(`http://localhost:3001/books/${id}`,{
+        .delete(`https://bookbackend-gamma.vercel.app/books/${id}`,{
             headers:{
                 "Authorization":`Bearer ${user.token}`
             }
