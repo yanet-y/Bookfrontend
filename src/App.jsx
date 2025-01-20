@@ -6,6 +6,7 @@ import EditBook from "./pages/EditBook"
 import DeleteBook from "./pages/DeleteBook"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
+import ConfirmEmail from "./pages/ConfirmEmail"
 
 
 function App() {
@@ -15,11 +16,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
+        <Route path="/confirm-email" element={<ConfirmEmail />} />
         <Route path='/books' element={<Home/>} />
         <Route path='/books/create' element={<CreateBooks/>}/>
         <Route path='/books/details/:id' element={<BookDetails />} />
         <Route path='/books/edit/:id' element={<EditBook />} />
         <Route path='/books/delete/:id' element={<DeleteBook />} />
+
       </Routes>
      
     </BrowserRouter>
